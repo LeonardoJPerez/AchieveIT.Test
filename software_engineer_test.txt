@@ -20,7 +20,12 @@ Developer Test
 	
 2.  Some of the questions will ask for a solution in the language of
     your choice.  What language(s) will you choose, and why?
+	C# and JS. C# is my main compiled language as a full stack developer. I know and understand the language and the .Net framework deep enough where I feel comfortable and efficient. 
+	JS is my preferred scripting language both for web and backend (nodejs). I feel I have enough mastery of JavaScript to provide production ready solutions.
+	
 3.  Explain the difference between testing and debugging.
+	Testing is used to prove that the program behaves in the way it is supposed to. It is used to validate logic and expected results. Debugging, in the other hand, is used to walk through the code with the purpose of finding and getting rid of bugs. This is mostly done at development time, but can happen at any stage of a project. Bugs are unwanted/broken behavior. A Perfomance issue may constitute a bug, if it prevents the application to behave in the expected manner, although, not a;ll performance issues are bugs e.g. lack of processing resources, usage spikes, etc. 
+	
 4.  Consider a user querying a search engine.  Describe, in as much
     detail as you like, what happens between the user clicking the
     "submit" button and the display of the results.
