@@ -136,7 +136,7 @@ employee                              department
 	{
 		if (list.Length <= 1) { return list; }
 
-		var listToSort = new List<int>(list); // Created new list for ease of use with linq extensions.
+		var listToSort = new List<int>(list); // Created new list to leverage linq extensions.
 		var wall = -1; // Value that will determine where the list will be partioned.
 
 		// For simplicity we always select the last item as pivot. We could have a random number to minimize worst case scenario and/or use 2 iterators in the for loop. I went with the simpler, easier to understand implementation.
