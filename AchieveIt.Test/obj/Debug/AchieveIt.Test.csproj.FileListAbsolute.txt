@@ -5,3 +5,13 @@ c:\users\leonardo\documents\visual studio 2015\Projects\AchieveIt.Test\AchieveIt
 c:\users\leonardo\documents\visual studio 2015\Projects\AchieveIt.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.csprojResolveAssemblyReference.cache
 c:\users\leonardo\documents\visual studio 2015\Projects\AchieveIt.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.dll
 c:\users\leonardo\documents\visual studio 2015\Projects\AchieveIt.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.pdb
+C:\Projects\AchieveIT.Test\AchieveIt.Test\bin\Debug\AchieveIt.Test.dll
+C:\Projects\AchieveIT.Test\AchieveIt.Test\bin\Debug\AchieveIt.Test.pdb
+C:\Projects\AchieveIT.Test\AchieveIt.Test\bin\Debug\Dapper.dll
+C:\Projects\AchieveIT.Test\AchieveIt.Test\bin\Debug\nunit.framework.dll
+C:\Projects\AchieveIT.Test\AchieveIt.Test\bin\Debug\Dapper.pdb
+C:\Projects\AchieveIT.Test\AchieveIt.Test\bin\Debug\Dapper.xml
+C:\Projects\AchieveIT.Test\AchieveIt.Test\bin\Debug\nunit.framework.xml
+C:\Projects\AchieveIT.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.csprojResolveAssemblyReference.cache
+C:\Projects\AchieveIT.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.dll
+C:\Projects\AchieveIT.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.pdb
