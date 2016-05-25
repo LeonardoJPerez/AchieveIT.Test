@@ -80,31 +80,46 @@ employee                              department
 6.  Write an SQL query to list the full name of every employee,
     alphabetized by last name.
 	
+	-- Reference: https://msdn.microsoft.com/en-us/library/ms181984.aspx
 	SELECT name FROM employee 
 	ORDER BY SUBSTRING(name, CHARINDEX(' ', name) + 1, LEN(name) - CHARINDEX(' ', name));
 	
 7.  Write an SQL query to list the full name of every employee along
     with the full name of his/her manager.
 	
-	SELECT e.name as "Employee Name", mngr.name as "Manager Name"
+	SELECT e.name as 'Employee Name', mngr.name as 'Manager Name'
 	FROM employee e
-	LEFT JOIN employee mngr on e.id = mngr.mgr_id;	
-	ORDER BY e.name;
+	LEFT JOIN employee mngr on e.mgr_id = mngr.id;
 	
 8.  Write an SQL query to list the full name of every employee in the
     Sales department.
 	
-	SELECT e.name as "Employee Name"
-	FROM employee e
-	INNER JOIN department d on e.mgr_id = d.head;	
+	-- Added UNION to also add Head of Department as part of the result.
+	SELECT e.name AS 'Employee Name' FROM employee e
+	INNER JOIN department d on e.id = d.head
+	WHERE d.name = 'Sales'
+	UNION
+	SELECT e.name AS 'Employee Name' FROM employee e
+	INNER JOIN department d on e.mgr_id = d.head
+	WHERE d.name = 'Sales';	
 	
 9.  Write an SQL query to list the full name of every employee along
     with name of his/her department.
 	
+	-- Added UNION to also add Head of Department as part of the result.
+	SELECT e.name as 'Employee Name', d.name as 'Department'
+	FROM employee e
+	INNER JOIN employee mngr on e.mgr_id = mngr.id
+	LEFT JOIN department d on d.head = mngr.id
+	UNION
+	SELECT e.name as "Employee Name", d.name as 'Department'
+	FROM employee e
+	INNER JOIN department d on d.head = e.id;
 	
 10. Is there a better design for a database that supports the queries
     described in questions 5-9?  If so, describe it.  If not, why not?
 	
+
 	
 11. Write a function in the language of your choice that implements
     quicksort on an array of integers.
