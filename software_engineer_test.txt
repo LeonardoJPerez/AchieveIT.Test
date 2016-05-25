@@ -132,6 +132,7 @@ employee                              department
 11. Write a function in the language of your choice that implements
     quicksort on an array of integers.
 	
+	// Language: C#
 	// Reference: https://www.youtube.com/watch?v=MZaf_9IZCrc
 	public int[] QuickSort(int[] list)
 	{
@@ -179,9 +180,35 @@ employee                              department
 12. Write a function in the language of your choice that performs
     binary search on a sorted array of integers.
 	
+	// Language: C#
+	// Reference: https://www.youtube.com/watch?v=JQhciTuD3E8
+	public int BinarySearch(int[] sortedArray, int searchValue)
+	{
+		// Get middle value
+		var midPos = sortedArray.Length / 2;
+		var mid = sortedArray[midPos];
+
+		if (mid < searchValue)
+		{
+			// Search Right side.
+			return BinarySearch(sortedArray.Where((elem, i) => i > midPos).ToArray(), searchValue);
+		}
+		else if (mid > searchValue)
+		{
+			// Search Left side.
+			return BinarySearch(sortedArray.Where((elem, i) => i < midPos).ToArray(), searchValue);
+		}
+		else
+		{
+			return mid;
+		}
+	}
 	
 13. Write a function in the language of your choice performs the query
     you wrote for question 7, and outputs the results as an HTML table.
+	
+	
+	
 14. Write a program in the language of your choice that takes a filename
     and a number N as arguments and retrieves and outputs the Nth line
     from the file.
