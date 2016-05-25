@@ -1,0 +1,7 @@
+c:\users\leonardo\documents\visual studio 2015\Projects\AchieveIt.Test\AchieveIt.Test\bin\Debug\AchieveIt.Test.dll
+c:\users\leonardo\documents\visual studio 2015\Projects\AchieveIt.Test\AchieveIt.Test\bin\Debug\AchieveIt.Test.pdb
+c:\users\leonardo\documents\visual studio 2015\Projects\AchieveIt.Test\AchieveIt.Test\bin\Debug\nunit.framework.dll
+c:\users\leonardo\documents\visual studio 2015\Projects\AchieveIt.Test\AchieveIt.Test\bin\Debug\nunit.framework.xml
+c:\users\leonardo\documents\visual studio 2015\Projects\AchieveIt.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.csprojResolveAssemblyReference.cache
+c:\users\leonardo\documents\visual studio 2015\Projects\AchieveIt.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.dll
+c:\users\leonardo\documents\visual studio 2015\Projects\AchieveIt.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.pdb
