@@ -16,7 +16,8 @@ Developer Test
 ==============
 
 1.  What editor will you use to edit this file, and why?
-	Notepad++. I've been using this editor for almost my entire career, plus is a very rich full featured editor. Since I;m only editing a single, non-code file (extension is TXT) I can update this file quickly with Notepad++.
+	Notepad++ and Visual Studio 2015. I've been using this editor for almost my entire career, plus is a very rich full featured editor. Since I'm only editing a single, non-code file (extension is TXT) I can update this file quickly with Notepad++.
+	For code the later questions that require code, I'll be using Visual Studio to craft the code, execute and test it. 
 	
 2.  Some of the questions will ask for a solution in the language of
     your choice.  What language(s) will you choose, and why?
@@ -130,6 +131,48 @@ employee                              department
 	
 11. Write a function in the language of your choice that implements
     quicksort on an array of integers.
+	
+	public int[] QuickSort(int[] list)
+	{
+		if (list.Length <= 1) { return list; }
+
+		var listToSort = new List<int>(list); // Created new list for ease of use with linq extensions.
+		var wall = -1; // Value that will determine where the list will be partioned.
+
+		// For simplicity we always select the last item as pivot. We could have a random number to minimize worst case scenario and/or use 2 iterators in the for loop. I went with the simpler, easier to understand implementation.
+		var pivot = listToSort.Count() - 1;
+		
+		for (int i = 0; i < listToSort.Count() - 1; i++)
+		{
+			if ((listToSort[i] < listToSort[pivot]))
+			{
+				wall++;
+				var t = listToSort[wall];
+				listToSort[wall] = listToSort[i];
+				listToSort[i] = t;
+			}
+		}
+
+		wall++;
+
+		// Swap Pivot with wall. This means the pivot value is in its correct position.
+		var temp = listToSort[wall];
+		listToSort[wall] = listToSort[pivot];
+		listToSort[pivot] = temp;
+
+		// Create partitions for list. Left side are any numbers lower than the wall, Right side numbers higher than the wall.
+		var left = listToSort.Where((elem, i) => i < wall).ToArray();
+		var right = listToSort.Where((elem, i) => i >= wall).ToArray();
+
+		// Exit condition. Grouping to account for duplicates.
+		if (left.GroupBy((v) => v).Count() <= 1 && right.GroupBy((v) => v).Count() <= 1)
+		{
+			return left.Concat(right).ToArray();
+		}
+
+		// Repeat sort for Left and Right partitions.
+		return QuickSort(left).Concat(QuickSort(right)).ToArray();
+	}
 	
 	
 12. Write a function in the language of your choice that performs
