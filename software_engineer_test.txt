@@ -132,6 +132,7 @@ employee                              department
 11. Write a function in the language of your choice that implements
     quicksort on an array of integers.
 	
+	// Reference: https://www.youtube.com/watch?v=MZaf_9IZCrc
 	public int[] QuickSort(int[] list)
 	{
 		if (list.Length <= 1) { return list; }
