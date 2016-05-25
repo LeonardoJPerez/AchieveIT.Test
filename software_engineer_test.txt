@@ -181,9 +181,53 @@ employee                              department
 	
 13. Write a function in the language of your choice performs the query
     you wrote for question 7, and outputs the results as an HTML table.
+	
+	// Referecnce: 
+	// 	Dapper.Net: https://github.com/StackExchange/dapper-dot-net
+	
+	public class Employee
+    {
+        public string EmployeeName { get; set; }
+        public string ManagerName { get; set; }
+    }	
+	
+	public void PrintEmployees()
+	{
+		using (var conn = new SqlConnection("Server=sqlinstance.cr39h6nxoxnt.us-east-1.rds.amazonaws.com;Database=AchieveIT;User Id=sa;Password=diamondsword.987;"))
+		{
+			conn.Open();
+
+			var employees = conn.Query<Employee>("SELECT e.name as 'EmployeeName', mngr.name as 'ManagerName' FROM employee e LEFT JOIN employee mngr on e.mgr_id = mngr.id;").ToList();
+			var sb = new StringBuilder();
+
+			sb.AppendLine("<table>");
+			sb.AppendLine("\t<thead>\n\t\t<tr>");
+			sb.AppendLine("\t\t\t<th>Employee Name</th>");
+			sb.AppendLine("\t\t\t<th>Manager Name</th>");
+			sb.AppendLine("\t\t</tr>\n\t</thead>");
+
+			sb.AppendLine("\t<tbody>");
+			foreach (var emp in employees)
+			{                    
+				sb.AppendLine("\t\t<tr>");
+				sb.AppendLine($"\t\t\t<td>{emp.EmployeeName}</td>");
+				sb.AppendLine($"\t\t\t<td>{emp.ManagerName}</td>");
+				sb.AppendLine("\t\t</tr>");                     
+			}
+			sb.AppendLine("\t</tbody>");
+			sb.AppendLine("</table>");
+			conn.Close();
+
+			Console.Write(sb.ToString());
+		}
+	}
+	
 14. Write a program in the language of your choice that takes a filename
     and a number N as arguments and retrieves and outputs the Nth line
     from the file.
+	
+	
 15. Write the function from question 12 in a different language.
+
 16. Write the program from question 14 in a different language (it can
     be the same language you used for #15, but it doesn't have to be).
