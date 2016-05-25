@@ -30,8 +30,7 @@ Developer Test
     detail as you like, what happens between the user clicking the
     "submit" button and the display of the results.
 
-	When a user clicks the submit button, depending on the way the search box is constructed, the content of the textbox will be submitted back to the server in the form of either a GET or POST (most of the time a GET), for the server to process. 
-	Under the hood, the browser will initiate a TCP/IP handshake to establish a session with the server. The browser wil then send the search query in either two ways: if POST, it will add the search query in the payload of the request, if GET, it will append (and encode) the search string as part of the URL followed by a "?" sign.
+	When a user clicks the submit button, depending on the way the search box is constructed, the content of the textbox will be submitted back to the server in the form of either a GET or POST (most of the time a GET), for the server to process. Under the hood, the browser will initiate a TCP/IP handshake to establish a session with the server. The browser wil then send the search query in either two ways: if POST, it will add the search query in the payload of the request, if GET, it will append (and encode) the search string as part of the URL followed by a ?.
 	The server will receive the request, parse the query string and process the payload on the request, if any (in ASP.Net this happens regardless of HTTP verb used). Use the search query to "search", let's say, agaisnt the database.
 	Once the information that matches the search is found, it is sent back to the requester in the payload of the response.
 	The browser will process the response and display the results, using HTML and JavaScript. 
