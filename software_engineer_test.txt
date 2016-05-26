@@ -181,27 +181,32 @@ employee                              department
     binary search on a sorted array of integers.
 	
 	// Language: C#
-	// Reference: https://www.youtube.com/watch?v=JQhciTuD3E8
-	public int BinarySearch(int[] sortedArray, int searchValue)
+	// Reference: https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/implementing-binary-search-of-an-array
+	
+	public static int BinarySearch(int[] sortedArray, int searchValue, int minPosition = 0, int maxPosition = -1)
 	{
-		// Get middle value
-		var midPos = sortedArray.Length / 2;
-		var mid = sortedArray[midPos];
+		// Get middle value and boundaries.
+		var max = maxPosition == -1 ? sortedArray.Length - 1 : maxPosition;
+		var min = minPosition;
+		var midPosition = (max + min) / 2;
+		var midValue = sortedArray[midPosition];
 
-		if (mid < searchValue)
+		if (midValue < searchValue)
 		{
 			// Search Right side.
-			return BinarySearch(sortedArray.Where((elem, i) => i > midPos).ToArray(), searchValue);
+			return BinarySearch(sortedArray, searchValue, midPosition + 1, max);
 		}
-		else if (mid > searchValue)
+		else if (midValue > searchValue)
 		{
 			// Search Left side.
-			return BinarySearch(sortedArray.Where((elem, i) => i < midPos).ToArray(), searchValue);
+			return BinarySearch(sortedArray, searchValue, min, midPosition - 1);
 		}
-		else
+		else if (midValue == searchValue)
 		{
-			return mid;
+			return midPosition;
 		}
+
+		return -1;
 	}
 	
 13. Write a function in the language of your choice performs the query
