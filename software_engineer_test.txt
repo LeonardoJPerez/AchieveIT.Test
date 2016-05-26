@@ -16,16 +16,18 @@ Developer Test
 ==============
 
 1.  What editor will you use to edit this file, and why?
-	Notepad++ and Visual Studio 2015. I've been using this editor for almost my entire career, plus is a very rich full featured editor. Since I'm only editing a single, non-code file (extension is TXT) I can update this file quickly with Notepad++.
-	For code the later questions that require code, I'll be using Visual Studio to craft the code, execute and test it. 
+	Notepad++ and Visual Studio 2015. I've been using this editor for almost my entire career, plus is a very rich, full featured editor. Since I'm only editing a single, non-code file (extension is TXT) I can update this file quickly with Notepad++.
+	For the later questions that require code, I'll be using Visual Studio 2015 to craft the code, execute and test it. 
 	
 2.  Some of the questions will ask for a solution in the language of
     your choice.  What language(s) will you choose, and why?
-	C# and JS. C# is my main compiled language as a full stack developer. I know and understand the language and the .Net framework deep enough where I feel comfortable and efficient. 
-	JS is my preferred scripting language both for web and backend (nodejs). I feel I have enough mastery of JavaScript to provide production ready solutions.
+	C# and JavaScript. C# is my main compiled language as a full stack developer. I know and understand the language and the .Net framework deep enough where I feel comfortable and efficient. 
+	JS is my preferred scripting language both for web and backend (nodejs). I feel I have sufficient knowledge of JavaScript to provide production ready solutions.
 	
 3.  Explain the difference between testing and debugging.
-	Testing is used to prove that the program behaves in the way it is supposed to. It is used to validate logic and expected results. Debugging, in the other hand, is used to walk through the code with the purpose of finding and getting rid of bugs. This is mostly done at development time, but can happen at any stage of a project. Bugs are unwanted/broken behavior. A Perfomance issue may constitute a bug, if it prevents the application to behave in the expected manner, although, not a;ll performance issues are bugs e.g. lack of processing resources, usage spikes, etc. 
+	Testing is used to prove that the program behaves in the way it is supposed to. It is used to validate logic and expected results. 
+	Debugging, in the other hand, is used to walk through the code with the purpose of finding and getting rid of Bugs. This is mostly done at development time, but can happen at any stage of the development lifecycle. 
+	Bugs are unwanted/broken behavior. A Perfomance issue may constitute a bug, if it prevents the application to behave in the expected manner, although, not all performance issues are bugs e.g. lack of processing resources, usage spikes, etc. 
 	
 4.  Consider a user querying a search engine.  Describe, in as much
     detail as you like, what happens between the user clicking the
