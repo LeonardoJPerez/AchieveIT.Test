@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Answer12.cs" />
-    <Compile Include="Answer07.cs" />
+    <Compile Include="Answer13.cs" />
     <Compile Include="Answer11.cs" />
     <Compile Include="Answer14.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="TestDocument.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

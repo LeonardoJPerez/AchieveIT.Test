@@ -212,8 +212,9 @@ employee                              department
 13. Write a function in the language of your choice performs the query
     you wrote for question 7, and outputs the results as an HTML table.
 	
+	// Language: C#
 	// Referecnce: 
-	// 	Dapper.Net: https://github.com/StackExchange/dapper-dot-net
+	// 		Dapper.Net: https://github.com/StackExchange/dapper-dot-net
 	
 	public class Employee
     {
@@ -256,6 +257,7 @@ employee                              department
     and a number N as arguments and retrieves and outputs the Nth line
     from the file.
 	
+	// Language: C#
 	// Reference: https://msdn.microsoft.com/en-us/library/system.io.file.readalllines(v=vs.110).aspx
 	private static void Main(string[] args)
 	{
@@ -295,7 +297,7 @@ employee                              department
 	
 15. Write the function from question 12 in a different language.
 
-	// Language: JavaScript (E5)
+	// Language: JavaScript (NodeJS)
 	var binarySearch = function(sortedArray, searchValue, minPosition, maxPosition)	{
 		// Get middle value and boundaries.
 		var max = maxPosition === undefined ? sortedArray.length - 1 : maxPosition;
@@ -329,5 +331,36 @@ employee                              department
 16. Write the program from question 14 in a different language (it can
     be the same language you used for #15, but it doesn't have to be).
 
-	
+	// Language: JavaScript (NodeJS) 
+	// References:
+	// 		https://nodejs.org/api/fs.html#fs_fs_readfile_file_options_callback
+	// 		https://nodejs.org/api/readline.html#readline_example_read_file_stream_line_by_line
+
+	var readline = require('readline');
+	var fs = require("fs");
+
+	if (process.argv.length < 4) {
+		console.log("No argumets specified.");
+		console.log("Enter [Filename with path] [Line number] as arguments to this application.");
+
+		return;
+	}
+
+	var file = process.argv[2];
+	var lineNumber = process.argv[3];
+
+	var reader = readline.createInterface({
+		input: fs.createReadStream(file, { encoding: 'utf8' })
+	});
+
+	var i = 0;
+	var exit = false;
+	reader.on('line', function (line) {
+		if (i++ == lineNumber) {
+			console.log('[Line: #' + lineNumber + '] - ' + '"' + line + '"');
+			exit = true;
+		}
+
+		if (exit) { return; }
+	});
 	

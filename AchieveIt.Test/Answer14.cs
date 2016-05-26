@@ -22,10 +22,10 @@ namespace AchieveIT.Answer14
                         throw new ArgumentException("Invalid Line number provided. Please enter a numeric value.");
                     }
 
-                    var lines = File.ReadAllLines(filePath, Encoding.ASCII).ToList();
+                    var lines = File.ReadAllLines(filePath, Encoding.UTF8).ToList();
                     if (lines.Any() && (nthLine >= 0 && nthLine < lines.Count))
                     {
-                        Console.WriteLine($"[Line: #{nthLine}] \"{lines[nthLine]}\"");
+                        Console.WriteLine($"[Line: #{nthLine}] - \"{lines[nthLine]}\"");
                     }
                     else
                     {
