@@ -1,4 +1,6 @@
-﻿var binarySearch = function (sortedArray, searchValue, minPosition, maxPosition) {
+﻿var Stopwatch = require('timer-stopwatch');
+
+var binarySearch = function (sortedArray, searchValue, minPosition, maxPosition) {
     // Get middle value and boundaries.
     var max = maxPosition === undefined ? sortedArray.length - 1 : maxPosition;
     var min = minPosition === undefined ? 0 : minPosition;
@@ -21,6 +23,15 @@
 };
 
 var array = [2, 4, 5, 7, 24, 25, 55, 56, 66, 84, 96, 96, 100, 789, 855];
+
+console.log("Searching for: " + 24);
+
+ 
+var sw = new Stopwatch();
+sw.start();
 var valueIndex = binarySearch(array, 24);
 
-console.log("BinarySearch "valueIndex);
+console.log("Value found at index: " + valueIndex);
+console.log("Time: " + sw.ms);
+
+sw.stop();
