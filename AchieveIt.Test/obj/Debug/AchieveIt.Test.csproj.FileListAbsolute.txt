@@ -15,9 +15,7 @@ C:\Projects\AchieveIT.Test\AchieveIt.Test\bin\Debug\nunit.framework.xml
 C:\Projects\AchieveIT.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.csprojResolveAssemblyReference.cache
 C:\Projects\AchieveIT.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.dll
 C:\Projects\AchieveIT.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.pdb
-C:\Source\AchieveIT.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.dll
 C:\Source\AchieveIT.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.pdb
-C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\AchieveIt.Test.dll
 C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\AchieveIt.Test.pdb
 C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\Dapper.dll
 C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\nunit.framework.dll
@@ -25,3 +23,6 @@ C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\Dapper.pdb
 C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\Dapper.xml
 C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\nunit.framework.xml
 C:\Source\AchieveIT.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.csprojResolveAssemblyReference.cache
+C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\TestDocument.txt
+C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\AchieveIt.Test.exe
+C:\Source\AchieveIT.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.exe

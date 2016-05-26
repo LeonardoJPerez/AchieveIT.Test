@@ -5,9 +5,7 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AchieveIT.Test", "AchieveIt.Test\AchieveIT.Test.csproj", "{2270EAA9-C934-4A2F-8CDA-A70489D19809}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AchieveIT.Answer14", "AchieveIT.Answer14\AchieveIT.Answer14.csproj", "{7928B5A5-8DA7-4034-8000-D710D8C398C2}"
-EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AchieveIT.Answer15", "AchieveIT.Answer15\AchieveIT.Answer15.njsproj", "{6C46C91F-1CFA-44FD-838E-E80CCA7FF2A4}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AchieveIT.Answer15-16", "AchieveIT.Answer15\AchieveIT.Answer15-16.njsproj", "{6C46C91F-1CFA-44FD-838E-E80CCA7FF2A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{2270EAA9-C934-4A2F-8CDA-A70489D19809}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2270EAA9-C934-4A2F-8CDA-A70489D19809}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2270EAA9-C934-4A2F-8CDA-A70489D19809}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7928B5A5-8DA7-4034-8000-D710D8C398C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7928B5A5-8DA7-4034-8000-D710D8C398C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7928B5A5-8DA7-4034-8000-D710D8C398C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7928B5A5-8DA7-4034-8000-D710D8C398C2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6C46C91F-1CFA-44FD-838E-E80CCA7FF2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6C46C91F-1CFA-44FD-838E-E80CCA7FF2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C46C91F-1CFA-44FD-838E-E80CCA7FF2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>AchieveIT.Answer15</Name>
+    <Name>AchieveIT.Answer15-16</Name>
     <RootNamespace>AchieveIT.Answer15</RootNamespace>
     <NodeExePath>.\node\node.exe</NodeExePath>
   </PropertyGroup>
@@ -12,8 +12,9 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6c46c91f-1cfa-44fd-838e-e80cca7ff2a4</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>Answer16.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -31,7 +32,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app.js" />
+    <Compile Include="Answer16.js" />
+    <Compile Include="Answer15.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
