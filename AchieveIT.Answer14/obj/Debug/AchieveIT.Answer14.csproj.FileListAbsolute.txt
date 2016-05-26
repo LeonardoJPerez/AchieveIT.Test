@@ -1,0 +1,7 @@
+C:\Source\AchieveIT.Test\AchieveIT.Answer14\bin\Debug\AchieveIT.Answer14.exe.config
+C:\Source\AchieveIT.Test\AchieveIT.Answer14\bin\Debug\AchieveIT.Answer14.exe
+C:\Source\AchieveIT.Test\AchieveIT.Answer14\bin\Debug\AchieveIT.Answer14.pdb
+C:\Source\AchieveIT.Test\AchieveIT.Answer14\obj\Debug\AchieveIT.Answer14.csprojResolveAssemblyReference.cache
+C:\Source\AchieveIT.Test\AchieveIT.Answer14\obj\Debug\AchieveIT.Answer14.exe
+C:\Source\AchieveIT.Test\AchieveIT.Answer14\obj\Debug\AchieveIT.Answer14.pdb
+C:\Source\AchieveIT.Test\AchieveIT.Answer14\bin\Debug\TestDocument.txt
