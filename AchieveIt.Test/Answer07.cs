@@ -8,7 +8,7 @@ using Dapper;
 namespace AchieveIt.Test
 {
     [TestFixture]
-    public class Answer7
+    public class Answer07
     {
         [Test]
         public void PrintEmployees()

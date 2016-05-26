@@ -48,9 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinarySearchTest.cs" />
-    <Compile Include="Answer7.cs" />
-    <Compile Include="QuickSortTest.cs" />
+    <Compile Include="Answer12.cs" />
+    <Compile Include="Answer07.cs" />
+    <Compile Include="Answer11.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

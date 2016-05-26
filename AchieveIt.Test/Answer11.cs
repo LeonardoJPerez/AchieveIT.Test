@@ -7,7 +7,7 @@ using System.Linq;
 namespace AchieveIt.Test
 {
     [TestFixture]
-    public class QuickSortTest
+    public class Answer11
     {
         /// <summary>
         /// QuickSort algorithm for a generic list. Added as a bonus.
@@ -70,7 +70,8 @@ namespace AchieveIt.Test
             var listToSort = new List<int>(list); // Created new list for ease of use with linq extensions.
             var wall = -1; // Value that will determine where the list will be partioned.
 
-            // For simplicity we always select the last item as pivot. We could have a random number to minimize worst case scenario and/or use 2 iterators in the for loop. I went with the simpler, easier to understand implementation.
+            // For simplicity we always select the last item as pivot. We could have a random number to minimize worst case scenario and/or use 2 iterators in the for loop. 
+            // I went with the simpler, easier to understand implementation.
             var pivot = listToSort.Count() - 1;
 
             for (int i = 0; i < listToSort.Count() - 1; i++)

@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace AchieveIt.Test
 {
-    public class BinarySearchTest
+    public class Answer12
     {
         /// <summary>
         /// Binaries Search for an array of integers. Returns index of value or -1 if not found.
@@ -83,7 +83,7 @@ namespace AchieveIt.Test
             }
 
             var timer = new Stopwatch();
-            var sortAlgorithm = new QuickSortTest();
+            var sortAlgorithm = new Answer11();
 
             timer.Start();
             var sortedList = sortAlgorithm.QuickSort(list.ToArray());
