@@ -24,3 +24,4 @@ C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\nunit.framework.dll
 C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\Dapper.pdb
 C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\Dapper.xml
 C:\Source\AchieveIT.Test\AchieveIt.Test\bin\Debug\nunit.framework.xml
+C:\Source\AchieveIT.Test\AchieveIt.Test\obj\Debug\AchieveIt.Test.csprojResolveAssemblyReference.cache
