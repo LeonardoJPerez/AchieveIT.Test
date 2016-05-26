@@ -59,7 +59,8 @@ namespace AchieveIt.Test
         }
 
         /// <summary>
-        /// QuickSort algorithm for an array of integers. Conforms to test requirements.)
+        /// QuickSort algorithm for an array of integers.
+        /// Conforms to test requirements.
         /// </summary>
         /// <param name="list">The list.</param>
         /// <returns>A QuickSorted list.</returns>

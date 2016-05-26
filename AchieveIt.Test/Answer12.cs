@@ -9,6 +9,7 @@ namespace AchieveIt.Test
     {
         /// <summary>
         /// Binaries Search for an array of integers. Returns index of value or -1 if not found.
+        /// Conforms to test requirements.
         /// </summary>
         /// <param name="sortedArray">The sorted array.</param>
         /// <param name="searchValue">The search value.</param>
@@ -41,6 +42,16 @@ namespace AchieveIt.Test
             return -1;
         }
 
+
+        /// <summary>
+        /// Binaries Search for an array of integers. Returns index of value or -1 if not found. Added as a bonus.
+        /// </summary>
+        /// <typeparam name="T">Value Type</typeparam>
+        /// <param name="sortedArray">The sorted array.</param>
+        /// <param name="searchValue">The search value.</param>
+        /// <param name="minPosition">The minimum position.</param>
+        /// <param name="maxPosition">The maximum position.</param>
+        /// <returns></returns>
         public int BinarySearch<T>(T[] sortedArray, T searchValue, int minPosition = 0, int maxPosition = -1)
         {
             // Get middle value
