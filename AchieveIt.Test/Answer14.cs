@@ -8,7 +8,7 @@ namespace AchieveIT.Answer14
     public class Program
     {
         // Reference: https://msdn.microsoft.com/en-us/library/system.io.file.readalllines(v=vs.110).aspx
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
             if (args.Count() == 2)
             {

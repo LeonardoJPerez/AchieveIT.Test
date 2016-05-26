@@ -13,7 +13,7 @@ namespace AchieveIt.Test
         [Test]
         public void PrintEmployees()
         {
-            using (var conn = new SqlConnection("Server=sqlinstance.cr39h6nxoxnt.us-east-1.rds.amazonaws.com;Database=AchieveIT;User Id=sa;Password=diamondsword.987;"))
+            using (var conn = new SqlConnection("Server=sqlinstance.cr39h6nxoxnt.us-east-1.rds.amazonaws.com;Database=AchieveIT;User Id=achieveit;Password=987;"))
             {
                 conn.Open();
 
@@ -28,10 +28,12 @@ namespace AchieveIt.Test
 
                 sb.AppendLine("\t<tbody>");
                 foreach (var emp in employees)
-                {                    
+                {
+                    var headOfDepartment = string.IsNullOrEmpty(emp.ManagerName) ? "<b>Head of Department</b>" : emp.ManagerName;
+
                     sb.AppendLine("\t\t<tr>");
                     sb.AppendLine($"\t\t\t<td>{emp.EmployeeName}</td>");
-                    sb.AppendLine($"\t\t\t<td>{emp.ManagerName}</td>");
+                    sb.AppendLine($"\t\t\t<td>{headOfDepartment}</td>");
                     sb.AppendLine("\t\t</tr>");                     
                 }
                 sb.AppendLine("\t</tbody>");
