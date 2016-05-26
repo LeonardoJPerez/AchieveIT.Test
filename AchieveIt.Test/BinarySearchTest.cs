@@ -13,7 +13,7 @@ namespace AchieveIt.Test
         /// <param name="sortedArray">The sorted array.</param>
         /// <param name="searchValue">The search value.</param>
         /// <param name="minPosition">The minimum position of the array.</param>
-        /// <param name="maxPosition">The maximum position.</param>
+        /// <param name="maxPosition">The maximum position of the array.</param>
         /// <returns></returns>
         public static int BinarySearchInt(int[] sortedArray, int searchValue, int minPosition = 0, int maxPosition = -1)
         {
