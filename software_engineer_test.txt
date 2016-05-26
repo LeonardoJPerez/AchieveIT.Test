@@ -88,7 +88,7 @@ employee                              department
 7.  Write an SQL query to list the full name of every employee along
     with the full name of his/her manager.
 	
-	SELECT e.name as 'Employee Name', mngr.name as 'Manager Name'
+	SELECT e.name as 'EmployeeName', mngr.name as 'ManagerName'
 	FROM employee e
 	LEFT JOIN employee mngr on e.mgr_id = mngr.id;
 	
